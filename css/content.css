@@ -1,0 +1,103 @@
+.content {
+  overflow: hidden;
+}
+.content .head .search {
+  position: relative;
+}
+.content .head .search i {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #888;
+  font-size: 14px;
+}
+.content .head .search input {
+  border: 1px solid #ccc;
+  width: 250px;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+}
+.content .head .search input:focus {
+  outline-color: #ddd;
+  width: 550px;
+}
+.content .head .search input:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+.content .head .search input:focus::-moz-placeholder {
+  opacity: 0;
+}
+.content .head .search input:focus:-ms-input-placeholder {
+  opacity: 0;
+}
+.content .head .search input:focus::-ms-input-placeholder {
+  opacity: 0;
+}
+.content .head .search input:focus::placeholder {
+  opacity: 0;
+}
+.content .head .icons .notification {
+  position: relative;
+}
+.content .head .icons .notification::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+  right: -5px;
+  top: -2px;
+}
+.content .head .icons img {
+  width: 32px;
+  height: 32px;
+}
+.content .employees {
+  border-radius: 10px;
+}
+.content .employees .responsive-table {
+  overflow-x: auto;
+}
+.content .employees .responsive-table table {
+  font-size: 15px;
+  min-height: 1000px;
+  border-spacing: 0;
+}
+.content .employees .responsive-table table thead td {
+  font-weight: bold;
+}
+.content .employees .responsive-table table td {
+  padding: 15px;
+}
+.content .employees .responsive-table table tbody tr:last-child {
+  border-right: 1px solid #eee;
+}
+.content .employees .responsive-table table tbody tr:hover td {
+  background-color: #faf7f7;
+}
+.content .employees .responsive-table table tbody tr td {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-bottom: 1px solid #eee;
+  border-left: 1px solid #eee;
+}
+
+@media (max-width: 767px) {
+  .content .head .search input {
+    width: 165px;
+  }
+  .content .head .search input:focus {
+    width: 200px;
+  }
+}
+@media (max-width: 991px) {
+  .content .head .search input {
+    width: 165px;
+  }
+  .content .head .search input:focus {
+    width: 400px;
+  }
+}

@@ -1,0 +1,21 @@
+$font-family: "IBM Plex Sans", sans-serif;
+
+* {
+    box-sizing: border-box;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+body {
+    margin: 0;
+    font-family: $font-family;
+}
+// start page
+.page {
+    background-color: #f1f5f9;
+    min-height: 100vh;
+}
+// end page
+@import "../scss/content.scss";
+@import "../scss/sidebar.scss";
