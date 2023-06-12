@@ -1,38 +1,41 @@
 .search {
-    position: relative;
-    i {
-        position: absolute;
-        top: 50%;
-        right: 15px;
-        transform: translateY(-50%);
-        color: #888;
-        font-size: 14px;
+  position: relative;
+  i {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    color: #888;
+    font-size: 14px;
+  }
+  input {
+    border: 1px solid #ccc;
+    width: 250px;
+    transition: width 0.3s;
+    &:focus {
+      outline-color: #ddd;
+      width: 550px;
+      &::placeholder {
+        opacity: 0;
+      }
     }
-    input {
-        border: 1px solid #ccc;
-        width: 250px;
-        transition: width 0.3s;
-        &:focus {
-            outline-color: #ddd;
-            width: 550px;
-            &::placeholder {
-                opacity: 0;
-            }
-        }
-    }
+  }
 }
 .employees {
-    .responsive-table {
-            
-            tbody {
-                tr {
-                    &:last-child {
-                        border-right: 1px solid #eee;
-                    }
-                   
-                }
-            }
+  .responsive-table {
+    tbody {
+      tr {
+        &:last-child {
+          border-right: 1px solid #eee;
         }
+        td {
+          i {
+            cursor: pointer;
+          }
+        }
+      }
     }
+  }
+}
 
 // end employees table

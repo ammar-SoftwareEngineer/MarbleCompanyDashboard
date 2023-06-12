@@ -68,6 +68,7 @@
                     tr {
                         &:last-child {
                             border-right: 1px solid #eee;
+                            cursor: pointer;
                         }
                         &:hover {
                             td {
@@ -83,6 +84,9 @@
                                 background-color: green;
                                 color: white;
                                 border-radius: 6px;
+                            }
+                            i{
+                                cursor: pointer;
                             }
                         }
                     }
