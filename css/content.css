@@ -84,6 +84,12 @@
   border-bottom: 1px solid #eee;
   border-left: 1px solid #eee;
 }
+.content .employees .responsive-table table tbody tr td label {
+  padding: 8px;
+  background-color: green;
+  color: white;
+  border-radius: 6px;
+}
 
 @media (max-width: 767px) {
   .content .head .search input {

@@ -1,0 +1,41 @@
+.search {
+  position: relative;
+}
+.search i {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #888;
+  font-size: 14px;
+}
+.search input {
+  border: 1px solid #ccc;
+  width: 250px;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+}
+.search input:focus {
+  outline-color: #ddd;
+  width: 550px;
+}
+.search input:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+.search input:focus::-moz-placeholder {
+  opacity: 0;
+}
+.search input:focus:-ms-input-placeholder {
+  opacity: 0;
+}
+.search input:focus::-ms-input-placeholder {
+  opacity: 0;
+}
+.search input:focus::placeholder {
+  opacity: 0;
+}
+
+.employees .responsive-table tbody tr:last-child {
+  border-right: 1px solid #eee;
+}
