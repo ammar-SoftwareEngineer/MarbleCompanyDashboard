@@ -61,9 +61,10 @@
         border-spacing: 0;
         thead td {
           font-weight: bold;
+          text-align: center;
         }
         td {
-          padding: 15px;
+          padding: 15px ;
         }
         tbody {
           tr {
@@ -86,9 +87,7 @@
                 color: white;
                 border-radius: 6px;
               }
-              i {
-                cursor: pointer;
-              }
+            
             }
           }
         }
@@ -112,9 +111,8 @@
     .employees{
       .head-tabe{
         button{
-          width: 100px !important;
-          font-size: 12px !important;
-          padding: 10px;
+          width: 60px !important;
+          padding: 8px;
           span{
             display: none;
           }

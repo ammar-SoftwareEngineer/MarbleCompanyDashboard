@@ -96,11 +96,12 @@ body {
 }
 .content .employees .responsive-table table {
   font-size: 15px;
-  min-height: 1000px;
+  min-width: 1000px;
   border-spacing: 0;
 }
 .content .employees .responsive-table table thead td {
   font-weight: bold;
+  text-align: center;
 }
 .content .employees .responsive-table table td {
   padding: 15px;
@@ -124,9 +125,6 @@ body {
   color: white;
   border-radius: 6px;
 }
-.content .employees .responsive-table table tbody tr td i {
-  cursor: pointer;
-}
 
 @media (max-width: 767px) {
   .content .head .search input {
@@ -136,9 +134,8 @@ body {
     width: 200px !important;
   }
   .content .employees .head-tabe button {
-    width: 100px !important;
-    font-size: 12px !important;
-    padding: 10px;
+    width: 60px !important;
+    padding: 8px;
   }
   .content .employees .head-tabe button span {
     display: none;
