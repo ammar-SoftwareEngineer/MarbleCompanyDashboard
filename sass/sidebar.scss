@@ -1,75 +1,76 @@
-@import "../scss/breakPoint.scss";
+@import"../sass/breakPoint.scss";
+
 // ######################################
 // start sidebar
 .sidebar {
-    position: relative;
-    width: 250px;
-    box-shadow: 0 0 10px #ddd;
+  position: relative;
+  width: 250px;
+  box-shadow: 0 0 10px #ddd;
 
-    .images {
-        > img {
-            width: 60px;
-            margin-bottom: 50px;
+  .images {
+    > img {
+      width: 60px;
+      margin-bottom: 50px;
+    }
+  }
+
+  .sidebar-nav {
+    height: 75%;
+  }
+
+  ul {
+    > li {
+      font-size: 14px;
+      > .active {
+        background-color: #f6f6f6;
+        font-size: 14px;
+        border-radius: 6px;
+      }
+
+      a {
+        transition: 0.3s;
+        &:hover {
+          background-color: #f6f6f6;
+          border-radius: 6px;
         }
-    }
 
-    .sidebar-nav {
-        height: 75%;
-    }
-
-    ul {
-        > li {
-            font-size: 14px;
-            > .active {
-                background-color: #f6f6f6;
-                font-size: 14px;
-                border-radius: 6px;
-            }
-
-            a {
-                transition: 0.3s;
-                &:hover {
-                    background-color: #f6f6f6;
-                    border-radius: 6px;
-                }
-
-                span {
-                    font-size: 14px;
-                }
-            }
+        span {
+          font-size: 14px;
         }
+      }
     }
+  }
 }
 @media (max-width: $mdx) {
-    .sidebar {
-        width: 65px !important;
-        padding: 10px !important;
+  .sidebar {
+    width: 65px !important;
+    padding: 10px !important;
 
-        .images {
-            > img {
-                width: 40px !important;
-                margin-bottom: 50px;
-            }
-        }
-        ul {
-            a {
-                justify-content: center;
-                span {
-                    display: none;
-                }
-            }
-        }
+    .images {
+      > img {
+        width: 40px !important;
+        margin-bottom: 50px;
+      }
     }
+    ul {
+      a {
+        justify-content: center;
+        span {
+          display: none;
+        }
+      }
+    }
+  }
 }
 @media (max-width: $lgx) {
-    .sidebar {
-        ul {
-            a {
-                span {
-                   font-size: 13px !important; 
-                }
-            }
+  .sidebar {
+    ul {
+      a {
+        span {
+          font-size: 13px !important;
         }
+      }
     }
+  }
 }
 // end sidebar

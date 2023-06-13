@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en" dir="rtl">
 
 <head>
     <meta charset="UTF-8">
-    <meta الاسم="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="images/logo.png">
     <title>داشبورد شركة الرخام</title>
     <!-- external file css -->
@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <div class="page d-flex" dir="rtl">
+    <div class="page d-flex">
         <div class="sidebar bg-white p-4">
             <div class="images d-flex justify-content-center ">
                 <img class="img-fluid mt-lg-0 mt-2" src="images/logo.png" alt="">
@@ -32,7 +32,7 @@
                     </a>
                 </li>
                 <li>
-                    <a class="active d-flex align-items-center text-black p-2 mb-2" href="attendance.html">
+                    <a class=" active d-flex align-items-center text-black p-2 mb-2" href="attendance.html">
                         <i class="fa-solid fa-clipboard-user fa-fw"></i>
                         <span class="me-2">الحضور</span>
                     </a>
@@ -67,18 +67,17 @@
                 <li>
                     <a class="d-flex align-items-center text-black p-2 mb-2" href="index.html">
                         <i class="fa-solid fa-gear fa-fw"></i>
-                        <span class="me-2">الاعدادت</span>
+                        <span class="me-2">الاعدادات</span>
                     </a>
                 </li>
             </ul>
         </div>
         <div class="content w-100">
             <!-- start Head -->
-            <div class="head bg-white p-3 d-flex justify-content-between align-items-center" >
-                <div class="search" >
+            <div class="head bg-white p-3 d-flex justify-content-between align-items-center">
+                <div class="search">
                     <i class="fa-solid fa-magnifying-glass"></i>
-                    <input class="p-2 pe-5 rounded-3 me-1" type="search" placeholder="اكتب كلمة أساسية">
-                </div>
+                    <input class="p-2 pe-5 rounded-3 ms-1" type="search" placeholder="اكتب الحروف الاساسية">                </div>
                 <div class="icons d-flex align-items-center">
                     <span class="notification">
                         <i class="fa-regular fa-bell fa-lg"></i>
@@ -87,93 +86,86 @@
                 </div>
             </div>
             <!-- end Head -->
-           
-           <!-- start الموظفs table -->
-           <div class="employees p-3 bg-white m-3">
-            <div class="head-tabe d-flex justify-content-between mb-4">
-                <h2 class="mt-0 mb-3">جدول الحضور</h2>
-                <button class="btn btn-light">اضافة موظفيين <i class="fa-solid fa-plus me-2"></i></button>
+
+            <!-- start employees table -->
+            <div class="employees p-3 bg-white m-3">
+                <div class="head-tabe d-flex align-items-center justify-content-between mb-4">
+                    <h2 class="mt-0 mb-3">جدول الحضور</h2>
+                    <button class="btn btn-light  d-flex align-items-center justify-content-center mb-3"><i class="fa-solid fa-plus me-2"></i><span>اضافة الموظفيين</span>  </button>
+                </div>
+                <div class="responsive-table">
+                    <table class="w-100">
+                        <thead>
+                            <tr>
+                                <td>الاسم</td>
+                                <td>التاريخ</td>
+                                <td>وقت الحضور</td>
+                                <td>وقت الانصراف</td>
+                                <td>الوقت الاضافي</td>
+                                <td>عدد ساعات الحضور</td>
+                                <td>التفاصيل</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><img class="me-2" src="/images/arab.png" alt=""> الموظف 1</td>
+                                <td>13/06/2023</td>
+                                <td>09:00 ص</td>
+                                <td>04:00 م</td>
+                                <td class="w-100">لا يوجد</td>
+                                <td>8 ساعات</td>
+                                <td><button class="btn btn-outline-dark">المزيد</button></td>
+                            </tr>
+                            <tr>
+                                <td><img class="me-2" src="/images/arab.png" alt=""> الموظف 2</td>
+                                <td>13/06/2023</td>
+                                <td>09:00 ص</td>
+                                <td>04:00 م</td>
+                                <td class="w-100">لا يوجد</td>
+                                <td>8 ساعات</td>
+                                <td><button class="btn btn-outline-dark">المزيد</button></td>
+                            </tr>
+                            <tr>
+                                <td><img class="me-2" src="/images/arab.png" alt=""> الموظف 3</td>
+                                <td>13/06/2023</td>
+                                <td>09:00 ص</td>
+                                <td>04:00 م</td>
+                                <td class="w-100">لا يوجد</td>
+                                <td>8 ساعات</td>
+                                <td><button class="btn btn-outline-dark">المزيد</button></td>
+                            </tr>
+                            <tr>
+                                <td><img class="me-2" src="/images/arab.png" alt=""> الموظف 4</td>
+                                <td>13/06/2023</td>
+                                <td>09:00 ص</td>
+                                <td>04:00 م</td>
+                                <td class="w-100">لا يوجد</td>
+                                <td>8 ساعات</td>
+                                <td><button class="btn btn-outline-dark">المزيد</button></td>
+                            </tr>
+                            <tr>
+                                <td><img class="me-2" src="/images/arab.png" alt=""> الموظف 5</td>
+                                <td>13/06/2023</td>
+                                <td>09:00 ص</td>
+                                <td>04:00 م</td>
+                                <td class="w-100">لا يوجد</td>
+                                <td>8 ساعات</td>
+                                <td><button class="btn btn-outline-dark">المزيد</button></td>
+                            </tr>
+                            <tr>
+                                <td><img class="me-2" src="/images/arab.png" alt=""> الموظف 6</td>
+                                <td>13/06/2023</td>
+                                <td>09:00 ص</td>
+                                <td>04:00 م</td>
+                                <td class="w-100">لا يوجد</td>
+                                <td>8 ساعات</td>
+                                <td><button class="btn btn-outline-dark">المزيد</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-            <div class="responsive-table">
-                <table class="w-100">
-                    <thead>
-                        <tr>
-                            <td>الاسم</td>
-                            <td>التاريخ</td>
-                            <td>الحضور</td>
-                            <td>الانصراف</td>
-                            <td>عدد ساعات الحضور</td>
-                            <td>الراحة</td>
-                            <td>الوقت الاضافي</td>
-                            <td>التفاصيل</td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><img class="ms-2" src="/images/arab.png" alt="">الموظف 1 </td>
-                            <td>06/13/2023</td>
-                            <td>09:00 ص</td>
-                            <td>04:00 م</td>
-                            <td>8 ساعات</td>
-                            <td>2 ساعة</td>
-                            <td>3 ساعة</td>
-                            <td> <button class="btn btn-outline-dark">المزيد</button></td>
-                        </tr>
-                        <tr>
-                            <td><img class="ms-2" src="/images/arab.png" alt="">الموظف 2 </td>
-                            <td>06/13/2023</td>
-                            <td>09:00 ص</td>
-                            <td>04:00 م</td>
-                            <td>8 ساعات</td>
-                            <td>2 ساعة</td>
-                            <td>3 ساعة</td>
-                            <td> <button class="btn btn-outline-dark">المزيد</button></td>
-                        </tr>
-                        <tr>
-                            <td><img class="ms-2" src="/images/arab.png" alt="">الموظف 3 </td>
-                            <td>06/13/2023</td>
-                            <td>09:00 ص</td>
-                            <td>04:00 م</td>
-                            <td>8 ساعات</td>
-                            <td>2 ساعة</td>
-                            <td>3 ساعة</td>
-                            <td> <button class="btn btn-outline-dark">المزيد</button></td>
-                        </tr>
-                        <tr>
-                            <td><img class="ms-2" src="/images/arab.png" alt="">الموظف 4 </td>
-                            <td>06/13/2023</td>
-                            <td>09:00 ص</td>
-                            <td>04:00 م</td>
-                            <td>8 ساعات</td>
-                            <td>2 ساعة</td>
-                            <td>3 ساعة</td>
-                            <td> <button class="btn btn-outline-dark">المزيد</button></td>
-                        </tr>
-                        <tr>
-                            <td><img class="ms-2" src="/images/arab.png" alt="">الموظف 5 </td>
-                            <td>06/13/2023</td>
-                            <td>09:00 ص</td>
-                            <td>04:00 م</td>
-                            <td>8 ساعات</td>
-                            <td>2 ساعة</td>
-                            <td>3 ساعة</td>
-                            <td> <button class="btn btn-outline-dark">المزيد</button></td>
-                        </tr>
-                        <tr>
-                            <td><img class="ms-2" src="/images/arab.png" alt="">الموظف 6 </td>
-                            <td>06/13/2023</td>
-                            <td>09:00 ص</td>
-                            <td>04:00 م</td>
-                            <td>8 ساعات</td>
-                            <td>2 ساعة</td>
-                            <td>3 ساعة</td>
-                            <td> <button class="btn btn-outline-dark">المزيد</button></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        <!-- end الموظفs table -->
+            <!-- end employees table -->
         </div>
 
 

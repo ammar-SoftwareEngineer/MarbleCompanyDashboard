@@ -1,128 +1,141 @@
-@import "../scss/breakPoint.scss";
+@import "../sass/breakPoint.scss";
 // start content
 .content {
-    overflow: hidden;
-    // start head
-    .head {
-        .search {
-            position: relative;
-            i {
-                position: absolute;
-                top: 50%;
-                left: 15px;
-                transform: translateY(-50%);
-                color: #888;
-                font-size: 14px;
-            }
-            input {
-                border: 1px solid #ccc;
-                width: 250px;
-                transition: width 0.3s;
-                &:focus {
-                    outline-color: #ddd;
-                    width: 550px;
-                    &::placeholder {
-                        opacity: 0;
-                    }
-                }
-            }
+  overflow: hidden;
+  // start head
+  .head {
+    .search {
+      position: relative;
+      i {
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        transform: translateY(-50%);
+        color: #888;
+        font-size: 14px;
+      }
+      input {
+        border: 1px solid #ccc;
+        width: 250px;
+        transition: width 0.3s;
+        &:focus {
+          outline-color: #ddd;
+          width: 550px;
+          &::placeholder {
+            opacity: 0;
+          }
         }
-        .icons {
-            .notification {
-                position: relative;
-                &::before {
-                    content: "";
-                    position: absolute;
-                    width: 10px;
-                    height: 10px;
-                    background-color: red;
-                    border-radius: 50%;
-                    right: -5px;
-                    top: -2px;
-                }
-            }
-            img {
-                width: 32px;
-                height: 32px;
-            }
-        }
+      }
     }
-    // end head
-    // #####################################
-    // start employees table
-    .employees {
-        border-radius: 10px;
-        .responsive-table {
-            overflow-x: auto;
-            table {
-                font-size: 15px;
-                min-height: 1000px;
-                border-spacing: 0;
-                thead td {
-                    font-weight: bold;
-                }
-                td {
-                    padding: 15px;
-                }
-                tbody {
-                    tr {
-                        &:last-child {
-                            border-right: 1px solid #eee;
-                            cursor: pointer;
-                        }
-                        &:hover {
-                            td {
-                                background-color: #faf7f7;
-                            }
-                        }
-                        td {
-                            transition: 0.3s;
-                            border-bottom: 1px solid #eee;
-                            border-left: 1px solid #eee;
-                            label{
-                                padding: 8px;
-                                background-color: green;
-                                color: white;
-                                border-radius: 6px;
-                            }
-                            i{
-                                cursor: pointer;
-                            }
-                        }
-                    }
-                }
-            }
+    .icons {
+      .notification {
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          background-color: red;
+          border-radius: 50%;
+          right: -5px;
+          top: -2px;
         }
+      }
+      img {
+        width: 32px;
+        height: 32px;
+      }
     }
-    // end employees table
+  }
+  // end head
+  // #####################################
+  // start employees table
+  .employees {
+    border-radius: 10px;
+    
+    .responsive-table {
+      overflow-x: auto;
+      table {
+        font-size: 15px;
+        min-height: 1000px;
+        border-spacing: 0;
+        thead td {
+          font-weight: bold;
+        }
+        td {
+          padding: 15px;
+        }
+        tbody {
+          tr {
+            &:last-child {
+              border-right: 1px solid #eee;
+              cursor: pointer;
+            }
+            &:hover {
+              td {
+                background-color: #faf7f7;
+              }
+            }
+            td {
+              transition: 0.3s;
+              border-bottom: 1px solid #eee;
+              border-left: 1px solid #eee;
+              label {
+                padding: 8px;
+                background-color: green;
+                color: white;
+                border-radius: 6px;
+              }
+              i {
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  // end employees table
 }
 @media (max-width: $mdx) {
-    .content {
-        .head {
-            .search {
-                input {
-                    width: 165px;
-                    &:focus {
-                        width: 200px;
-                    }
-                }
-            }
+  .content {
+    .head {
+      .search {
+        input {
+          width: 165px !important;
+          &:focus {
+            width: 200px !important;
+          }
         }
+      }
     }
+    .employees{
+      .head-tabe{
+        button{
+          width: 100px !important;
+          font-size: 12px !important;
+          padding: 10px;
+          span{
+            display: none;
+          }
+        }
+      }
+    }
+  }
 }
 @media (max-width: $lgx) {
-    .content {
-        .head {
-            .search {
-                input {
-                    width: 165px;
-                    &:focus {
-                        width: 400px;
-                    }
-                }
-            }
+  .content {
+    .head {
+      .search {
+        input {
+          width: 165px;
+          &:focus {
+            width: 400px;
+          }
         }
+      }
     }
+  }
 }
 // end content
 // start h1

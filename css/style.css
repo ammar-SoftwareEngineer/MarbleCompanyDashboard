@@ -107,6 +107,7 @@ body {
 }
 .content .employees .responsive-table table tbody tr:last-child {
   border-right: 1px solid #eee;
+  cursor: pointer;
 }
 .content .employees .responsive-table table tbody tr:hover td {
   background-color: #faf7f7;
@@ -123,13 +124,24 @@ body {
   color: white;
   border-radius: 6px;
 }
+.content .employees .responsive-table table tbody tr td i {
+  cursor: pointer;
+}
 
 @media (max-width: 767px) {
   .content .head .search input {
-    width: 165px;
+    width: 165px !important;
   }
   .content .head .search input:focus {
-    width: 200px;
+    width: 200px !important;
+  }
+  .content .employees .head-tabe button {
+    width: 100px !important;
+    font-size: 12px !important;
+    padding: 10px;
+  }
+  .content .employees .head-tabe button span {
+    display: none;
   }
 }
 @media (max-width: 991px) {
