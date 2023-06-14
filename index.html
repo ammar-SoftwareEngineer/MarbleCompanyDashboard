@@ -92,7 +92,31 @@
             <div class="employees p-3 bg-white m-3">
                 <div class="head-tabe d-flex align-items-center justify-content-between mb-4">
                     <h2 class="mt-0 mb-3">الموظفيين</h2>
-                    <button class="btn btn-light d-flex align-items-center justify-content-center mb-3"><i class="fa-solid fa-plus ms-lg-2 ms-md-2 ms-0 "></i><span>اضافة الموظفيين</span>  </button>
+                   <!-- Button trigger modal -->
+                   <button type="button" class="btn btn-light" data-bs-toggle="modal"
+                   data-bs-target="#exampleModal">
+                   <i class="fa-solid fa-plus ms-lg-2 ms-md-2 ms-0"></i> اضافة الموظفيين
+               </button>
+               <!-- Modal -->
+               <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                   aria-hidden="true">
+                   <div class="modal-dialog">
+                       <div class="modal-content">
+                           <div class="modal-header">
+                               <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+                               <button type="button" class="btn-close ms-0" data-bs-dismiss="modal"
+                                   aria-label="Close"></button>
+                           </div>
+                           <div class="modal-body d-flex align-items-center flex-wrap">
+                           </div>
+                           <div class="modal-footer">
+                               <button type="button" class="btn btn-secondary"
+                                   data-bs-dismiss="modal">اغلاق</button>
+                               <button type="button" class="btn btn-outline-dark">حفظ</button>
+                           </div>
+                       </div>
+                   </div>
+               </div>
                 </div>
                 <div class="responsive-table">
                     <table class="w-100">

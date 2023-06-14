@@ -94,8 +94,79 @@
                 <div class="responsive-table">
                     <div class="head-tabe d-flex align-items-center justify-content-between mb-4">
                         <h2 class="mt-0 mb-3 date-shift"></h2>
-                        <button class="btn btn-light  d-flex align-items-center justify-content-center mb-3"><i
-                                class="fa-solid fa-plus ms-lg-2 ms-md-2 ms-0"></i><span>اضافة حدث</span> </button>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-light" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            <i class="fa-solid fa-plus ms-lg-2 ms-md-2 ms-0"></i> اضافة حدث
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">عنوان الحدث</h1>
+                                        <button type="button" class="btn-close ms-0" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body d-flex align-items-center flex-wrap">
+                                        <div class="row gy-4">
+                                            <div class="col-lg-6">
+                                                <div class="employee">
+                                                    <label for="task">اسم الموظف</label>
+                                                    <select class="form-select rounded-3" name="task" id="task">
+                                                        <option value=""></option>
+                                                        <option value="1">اعمال الديكور</option>
+                                                        <option value="2">اعمال الديكور</option>
+                                                        <option value="3">اعمال الديكور</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="department">
+                                                    <label for="task">القسم</label>
+                                                    <select class="form-select rounded-3 " name="task" id="task">
+                                                        <option value=""></option>
+                                                        <option value="1">اعمال الديكور</option>
+                                                        <option value="2">اعمال الديكور</option>
+                                                        <option value="3">اعمال الديكور</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="work ">
+                                                    <label for="work">العمل</label>
+                                                    <select class="form-select rounded-3 w-100 " name="task" id="task">
+                                                        <option value=""></option>
+                                                        <option value="2">اعمال الديكور</option>
+                                                        <option value="2">اعمال الديكور</option>
+                                                        <option value="3">اعمال الديكور</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="date">
+                                                    <label for="date">التاريخ</label>
+                                                    <select class="form-select rounded-3 w-100 ms-auto" name="task"
+                                                        id="date">
+                                                        <option value=""></option>
+                                                        <option value="1">00/00/0000</option>
+                                                        <option value="1">00/00/0000</option>
+                                                        <option value="1">00/00/0000</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">اغلاق</button>
+                                        <button type="button" class="btn btn-outline-dark">حفظ</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <table class="w-100">
                         <thead>
@@ -124,8 +195,8 @@
                                 </td>
                                 <td>
                                     <label class="shift d-flex justify-content-center" for="">
-                                        <button class="btn"><i
-                                            class="fa-solid fa-plus"></i>
+                                        <button class="btn modal-dialog modal-dialog-centered"><i
+                                                class="fa-solid fa-plus"></i>
                                         </button>
                                     </label>
                                 </td>
@@ -176,7 +247,7 @@
                                         <p class="text-black-50 m-0"> القسم</p>
                                         <span class="text-black-50">العمل</span>
                                     </div>
-                               
+
                                 <td>
                                     <label class="shift" for="">
                                         <h6> 9ص-4م</h6>
@@ -197,8 +268,7 @@
                                 </td>
                                 <td>
                                     <label class="shift d-flex justify-content-center" for="">
-                                        <button class="btn"><i
-                                            class="fa-solid fa-plus"></i></button>
+                                        <button class="btn"><i class="fa-solid fa-plus"></i></button>
                                     </label>
                                 </td>
                                 <td>
@@ -230,48 +300,48 @@
                                         <p class="text-black-50 m-0"> القسم</p>
                                         <span class="text-black-50">العمل</span>
                                     </div>
-                                    <td>
-                                        <label class="shift" for="">
-                                            <h6> 9ص-4م</h6>
-                                            <p>مقابلة</p>
-                                        </label>
-                                    </td>
-                                    <td>
-                                        <label class="shift" for="">
-                                            <h6> 9ص-4م</h6>
-                                            <p>مقابلة</p>
-                                        </label>
-                                    </td>
-                                    <td>
-                                        <label class="shift" for="">
-                                            <h6> 9ص-4م</h6>
-                                            <p>مقابلة</p>
-                                        </label>
-                                    </td>
-                                    <td>
-                                        <label class="shift" for="">
-                                            <h6> 9ص-4م</h6>
-                                            <p>مقابلة</p>
-                                        </label>
-                                    </td>
-                                    <td>
-                                        <label class="shift" for="">
-                                            <h6> 9ص-4م</h6>
-                                            <p>مقابلة</p>
-                                        </label>
-                                    </td>
-                                    <td>
-                                        <label class="shift close" for="">
-                                            <h6>مغلق</h6>
-                                            <p></p>
-                                        </label>
-                                    </td>
-                                    <td>
-                                        <label class="shift close" for="">
-                                            <h6>مغلق</h6>
-                                            <p></p>
-                                        </label>
-                                    </td>
+                                <td>
+                                    <label class="shift" for="">
+                                        <h6> 9ص-4م</h6>
+                                        <p>مقابلة</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="shift" for="">
+                                        <h6> 9ص-4م</h6>
+                                        <p>مقابلة</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="shift" for="">
+                                        <h6> 9ص-4م</h6>
+                                        <p>مقابلة</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="shift" for="">
+                                        <h6> 9ص-4م</h6>
+                                        <p>مقابلة</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="shift" for="">
+                                        <h6> 9ص-4م</h6>
+                                        <p>مقابلة</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="shift close" for="">
+                                        <h6>مغلق</h6>
+                                        <p></p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="shift close" for="">
+                                        <h6>مغلق</h6>
+                                        <p></p>
+                                    </label>
+                                </td>
                             </tr>
                             <tr>
                                 <td class="d-flex p-5">
@@ -283,48 +353,48 @@
                                         <p class="text-black-50 m-0"> القسم</p>
                                         <span class="text-black-50">العمل</span>
                                     </div>
-                                    <td>
-                                        <label class="shift" for="">
-                                            <h6> 9ص-4م</h6>
-                                            <p>مقابلة</p>
-                                        </label>
-                                    </td>
-                                    <td>
-                                        <label class="shift" for="">
-                                            <h6> 9ص-4م</h6>
-                                            <p>مقابلة</p>
-                                        </label>
-                                    </td>
-                                    <td>
-                                        <label class="shift" for="">
-                                            <h6> 9ص-4م</h6>
-                                            <p>مقابلة</p>
-                                        </label>
-                                    </td>
-                                    <td>
-                                        <label class="shift" for="">
-                                            <h6> 9ص-4م</h6>
-                                            <p>مقابلة</p>
-                                        </label>
-                                    </td>
-                                    <td>
-                                        <label class="shift" for="">
-                                            <h6> 9ص-4م</h6>
-                                            <p>مقابلة</p>
-                                        </label>
-                                    </td>
-                                    <td>
-                                        <label class="shift close" for="">
-                                            <h6>مغلق</h6>
-                                            <p></p>
-                                        </label>
-                                    </td>
-                                    <td>
-                                        <label class="shift close" for="">
-                                            <h6>مغلق</h6>
-                                            <p></p>
-                                        </label>
-                                    </td>
+                                <td>
+                                    <label class="shift" for="">
+                                        <h6> 9ص-4م</h6>
+                                        <p>مقابلة</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="shift" for="">
+                                        <h6> 9ص-4م</h6>
+                                        <p>مقابلة</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="shift" for="">
+                                        <h6> 9ص-4م</h6>
+                                        <p>مقابلة</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="shift" for="">
+                                        <h6> 9ص-4م</h6>
+                                        <p>مقابلة</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="shift" for="">
+                                        <h6> 9ص-4م</h6>
+                                        <p>مقابلة</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="shift close" for="">
+                                        <h6>مغلق</h6>
+                                        <p></p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="shift close" for="">
+                                        <h6>مغلق</h6>
+                                        <p></p>
+                                    </label>
+                                </td>
                             </tr>
                             <tr>
                                 <td class="d-flex p-5">
@@ -336,48 +406,48 @@
                                         <p class="text-black-50 m-0"> القسم</p>
                                         <span class="text-black-50">العمل</span>
                                     </div>
-                                    <td>
-                                        <label class="shift" for="">
-                                            <h6> 9ص-4م</h6>
-                                            <p>مقابلة</p>
-                                        </label>
-                                    </td>
-                                    <td>
-                                        <label class="shift" for="">
-                                            <h6> 9ص-4م</h6>
-                                            <p>مقابلة</p>
-                                        </label>
-                                    </td>
-                                    <td>
-                                        <label class="shift" for="">
-                                            <h6> 9ص-4م</h6>
-                                            <p>مقابلة</p>
-                                        </label>
-                                    </td>
-                                    <td>
-                                        <label class="shift" for="">
-                                            <h6> 9ص-4م</h6>
-                                            <p>مقابلة</p>
-                                        </label>
-                                    </td>
-                                    <td>
-                                        <label class="shift" for="">
-                                            <h6> 9ص-4م</h6>
-                                            <p>مقابلة</p>
-                                        </label>
-                                    </td>
-                                    <td>
-                                        <label class="shift close" for="">
-                                            <h6>مغلق</h6>
-                                            <p></p>
-                                        </label>
-                                    </td>
-                                    <td>
-                                        <label class="shift close" for="">
-                                            <h6>مغلق</h6>
-                                            <p></p>
-                                        </label>
-                                    </td>
+                                <td>
+                                    <label class="shift" for="">
+                                        <h6> 9ص-4م</h6>
+                                        <p>مقابلة</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="shift" for="">
+                                        <h6> 9ص-4م</h6>
+                                        <p>مقابلة</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="shift" for="">
+                                        <h6> 9ص-4م</h6>
+                                        <p>مقابلة</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="shift" for="">
+                                        <h6> 9ص-4م</h6>
+                                        <p>مقابلة</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="shift" for="">
+                                        <h6> 9ص-4م</h6>
+                                        <p>مقابلة</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="shift close" for="">
+                                        <h6>مغلق</h6>
+                                        <p></p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="shift close" for="">
+                                        <h6>مغلق</h6>
+                                        <p></p>
+                                    </label>
+                                </td>
                             </tr>
                             <tr>
                                 <td class="d-flex p-5">
@@ -389,48 +459,48 @@
                                         <p class="text-black-50 m-0"> القسم</p>
                                         <span class="text-black-50">العمل</span>
                                     </div>
-                                    <td>
-                                        <label class="shift" for="">
-                                            <h6> 9ص-4م</h6>
-                                            <p>مقابلة</p>
-                                        </label>
-                                    </td>
-                                    <td>
-                                        <label class="shift" for="">
-                                            <h6> 9ص-4م</h6>
-                                            <p>مقابلة</p>
-                                        </label>
-                                    </td>
-                                    <td>
-                                        <label class="shift" for="">
-                                            <h6> 9ص-4م</h6>
-                                            <p>مقابلة</p>
-                                        </label>
-                                    </td>
-                                    <td>
-                                        <label class="shift" for="">
-                                            <h6> 9ص-4م</h6>
-                                            <p>مقابلة</p>
-                                        </label>
-                                    </td>
-                                    <td>
-                                        <label class="shift" for="">
-                                            <h6> 9ص-4م</h6>
-                                            <p>مقابلة</p>
-                                        </label>
-                                    </td>
-                                    <td>
-                                        <label class="shift close" for="">
-                                            <h6>مغلق</h6>
-                                            <p></p>
-                                        </label>
-                                    </td>
-                                    <td>
-                                        <label class="shift close" for="">
-                                            <h6>مغلق</h6>
-                                            <p></p>
-                                        </label>
-                                    </td>
+                                <td>
+                                    <label class="shift" for="">
+                                        <h6> 9ص-4م</h6>
+                                        <p>مقابلة</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="shift" for="">
+                                        <h6> 9ص-4م</h6>
+                                        <p>مقابلة</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="shift" for="">
+                                        <h6> 9ص-4م</h6>
+                                        <p>مقابلة</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="shift" for="">
+                                        <h6> 9ص-4م</h6>
+                                        <p>مقابلة</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="shift" for="">
+                                        <h6> 9ص-4م</h6>
+                                        <p>مقابلة</p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="shift close" for="">
+                                        <h6>مغلق</h6>
+                                        <p></p>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="shift close" for="">
+                                        <h6>مغلق</h6>
+                                        <p></p>
+                                    </label>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
