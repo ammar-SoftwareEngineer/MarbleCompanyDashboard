@@ -58,6 +58,28 @@
 .content .employees {
   border-radius: 10px;
 }
+.content .employees .nationality, .content .employees .gender, .content .employees .marital-status {
+  position: relative;
+}
+.content .employees .nationality select, .content .employees .gender select, .content .employees .marital-status select {
+  background-color: white;
+  outline: none;
+  /* remove the original arrow */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+.content .employees .nationality .fa, .content .employees .gender .fa, .content .employees .marital-status .fa {
+  position: absolute;
+  top: 43px;
+  left: 15px;
+  color: #888;
+  pointer-events: none;
+}
+.content .employees .images i {
+  cursor: pointer;
+}
 .content .employees .responsive-table {
   overflow-x: auto;
 }
@@ -68,6 +90,7 @@
 }
 .content .employees .responsive-table table thead td {
   font-weight: bold;
+  text-align: center;
 }
 .content .employees .responsive-table table td {
   padding: 15px;
@@ -91,9 +114,6 @@
   color: white;
   border-radius: 6px;
 }
-.content .employees .responsive-table table tbody tr td i {
-  cursor: pointer;
-}
 
 @media (max-width: 767px) {
   .content .head .search input {
@@ -103,9 +123,8 @@
     width: 200px !important;
   }
   .content .employees .head-tabe button {
-    width: 100px !important;
-    font-size: 12px !important;
-    padding: 10px;
+    width: 60px !important;
+    padding: 8px;
   }
   .content .employees .head-tabe button span {
     display: none;

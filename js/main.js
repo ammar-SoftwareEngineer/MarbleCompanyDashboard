@@ -8,9 +8,9 @@ DateH.forEach((dateHtml) => {
 // end date in Attendance page
 // ################################################
 // start date in shift page
-let dateOne = new Date();
-let DateShift = document.querySelector(".date-shift");
-DateShift.innerHTML = dateOne.toDateString();
+// let dateOne = new Date();
+// let DateShift = document.querySelector(".date-shift");
+// DateShift.innerHTML = dateOne.toDateString();
 
 // end date in shift page
 // ################################################

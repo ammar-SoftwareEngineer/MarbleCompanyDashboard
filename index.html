@@ -55,24 +55,26 @@
                         <span class="me-2">المواقع الخاصة بنا</span>
                     </a>
                 </li>
-            </ul>
-            <ul class="p-0 sidebar-footer mb-5">
-                <li>
-                    <a class="d-flex align-items-center text-black p-2 mb-2" href="index.html">
-                        <i class="fa-solid fa-headset fa-fw"></i>
-                        <span class="me-2">الدعم</span>
-                    </a>
-                </li>
+                <ul class="p-0 sidebar-footer mb-5">
+                    <h6 class="me-2 text-black-50 mt-3">اخرى</h6>
+                    <li>
+                        <a class="d-flex align-items-center text-black p-2 mb-2" href="index.html">
+                            <i class="fa-solid fa-headset fa-fw"></i>
+                            <span class="me-2">الدعم</span>
+                        </a>
+                    </li>
 
-                <li>
-                    <a class="d-flex align-items-center text-black p-2 mb-2" href="index.html">
-                        <i class="fa-solid fa-gear fa-fw"></i>
-                        <span class="me-2">الاعدادات</span>
-                    </a>
-                </li>
+                    <li>
+                        <a class="d-flex align-items-center text-black p-2 mb-2" href="index.html">
+                            <i class="fa-solid fa-gear fa-fw"></i>
+                            <span class="me-2">الاعدادات</span>
+                        </a>
+                    </li>
+                </ul>
             </ul>
+
         </div>
-        <div class="content w-100">
+        <div class="content w-100" id="content">
             <!-- start Head -->
             <div class="head bg-white p-3 d-flex justify-content-between align-items-center">
                 <div class="search">
@@ -92,100 +94,173 @@
             <div class="employees p-3 bg-white m-3">
                 <div class="head-tabe d-flex align-items-center justify-content-between mb-4">
                     <h2 class="mt-0 mb-3">الموظفيين</h2>
-                   <!-- Button trigger modal -->
-                   <button type="button" class="btn btn-light" data-bs-toggle="modal"
-                   data-bs-target="#exampleModal">
-                   <i class="fa-solid fa-plus ms-lg-2 ms-md-2 ms-0"></i> <span>اضافة الموظفيين</span> 
-               </button>
-               <!-- Modal -->
-               <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                   aria-hidden="true">
-                   <div class="modal-dialog">
-                       <div class="modal-content">
-                           <div class="modal-header">
-                               <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
-                               <button type="button" class="btn-close ms-0" data-bs-dismiss="modal"
-                                   aria-label="Close"></button>
-                           </div>
-                           <div class="modal-body d-flex align-items-center flex-wrap">
-                           </div>
-                           <div class="modal-footer">
-                               <button type="button" class="btn btn-secondary"
-                                   data-bs-dismiss="modal">اغلاق</button>
-                               <button type="button" class="btn btn-outline-dark">حفظ</button>
-                           </div>
-                       </div>
-                   </div>
-               </div>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <i class="fa-solid fa-plus ms-lg-2 ms-md-2 ms-0"></i> <span>اضافة الموظفيين</span>
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel"> معلومات عامة</h1>
+                                    <button type="button" class="btn-close ms-0" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body d-flex align-items-center flex-wrap">
+
+                                    <form action="" class="w-100">
+                                        <div class="row gy-4">
+                                            <div class="col-lg-12">
+                                                <div class="images d-flex justify-content-center mb-4 mt-3">
+                                                    <label class="image" for="img"><i
+                                                            class="fa fa-user-circle fa-5x"></i></label>
+                                                    <input id="img" class="d-none" type="file">
+                                                    <img id="image-preview">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6">
+                                                <div class="ar-name">
+                                                    <label for="ar-name">الاسم كاملا باللغة العربية</label>
+                                                    <input id="ar-name" class="form-control rounded-3 mt-2" type="text"
+                                                        aria-label="default input example">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="en-name ">
+                                                    <label for="en-name">الاسم كاملا باللغة الانجليزية</label>
+                                                    <input id="en-name" class="form-control rounded-3 mt-2 " type="text"
+                                                        aria-label="default input example">
+
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <div class="number-work">
+                                                    <label for="number-work">الرقم الوظيفي </label>
+                                                    <input id="number-work" class="form-control rounded-3 mt-2"
+                                                        type="text" aria-label="default input example">
+
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <div class="number">
+                                                    <label for="number">رقم الهوية/الاقامة</label>
+                                                    <input id="number" class="form-control rounded-3 mt-2" type="text"
+                                                        aria-label="default input example">
+
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <div class="nationality">
+                                                    <label for="nationality">الجنسية</label>
+                                                    <select id="nationality" class="form-control mt-2 rounded-3">
+                                                    </select>
+                                                    <i class="fa fa-chevron-down"></i>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <div class="email">
+                                                    <label for="email" class="form-label">البريد الالكتروني</label>
+                                                    <input type="email" class="form-control" id="email" placeholder="">
+
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <div class="phone">
+                                                    <label for="phone" class="form-label">رقم الهاتف</label>
+                                                    <input type="text" class="form-control" id="phone">
+
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-3">
+                                                <div class="date">
+                                                    <label for="date">تاريخ الانضمام</label>
+                                                    <input id="date" class="form-control rounded-3 mt-2" type="date"
+                                                        aria-label="default input example">
+
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <div class="work">
+                                                    <label for="work">العمل</label>
+                                                    <input id="work" class="form-control rounded-3 mt-2" type="text"
+                                                        aria-label="default input example">
+
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <div class="dapart">
+                                                    <label for="dapart">القسم</label>
+                                                    <input id="dapart" class="form-control rounded-3 mt-2" type="text"
+                                                        aria-label="default input example">
+
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <div class="salary">
+                                                    <label for="salary">الراتب</label>
+                                                    <input id="salary" class="form-control rounded-3 mt-2" type="number"
+                                                        aria-label="default input example">
+
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <div class="status">
+                                                    <label for="status">الحالة</label>
+                                                    <input id="status" class="form-control rounded-3 mt-2" type="text"
+                                                        aria-label="default input example">
+
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <div class="gender">
+                                                    <label for="gender">الجنس</label>
+                                                    <select id="gender" class="form-control mt-2 rounded-3">
+                                                    </select>
+                                                    <i class="fa fa-chevron-down"></i>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <div class="marital-status">
+                                                    <label for="marital-status">الحالة الاجتماعية</label>
+                                                    <select id="marital-status" class="form-control mt-2 rounded-3">
+                                                    </select>
+                                                    <i class="fa fa-chevron-down"></i>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">اغلاق</button>
+                                    <button id="submit" class="btn btn-outline-dark">حفظ</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="responsive-table">
-                    <table class="w-100">
+                    <table class="table w-100">
                         <thead>
                             <tr>
-                                <td>الاسم</td>
-                                <td>تاريخ الانضمام</td>
-                                <td>عمله</td>
-                                <td>القسم</td>
-                                <td>الراتب</td>
-                                <td>الحالة</td>
-                                <td>التفاصيل</td>
+                                <td scope="col">ID</td>
+                                <td scope="col">الاسم</td>
+                                <td scope="col">تاريخ الانضمام</td>
+                                <td scope="col">عمله</td>
+                                <td scope="col">القسم</td>
+                                <td scope="col">الراتب</td>
+                                <td scope="col">الحالة</td>
+                                <td scope="col">التفاصيل</td>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
-                                <td><img class="ms-2" src="images/arab.png" alt=""> الموظف 1</td>
-                                <td>13/06/2023</td>
-                                <td>عمله 1</td>
-                                <td>القسم 1</td>
-                                <td>الراتب 1</td>
-                                <td><label for="">نشط</label></td>
-                                <td><button class="btn btn-outline-dark">المزيد</button></td>
-                            </tr>
-                            <tr>
-                                <td><img class="ms-2" src="images/arab.png" alt=""> الموظف 2</td>
-                                <td>13/06/2023</td>
-                                <td>عمله 2</td>
-                                <td>القسم 2</td>
-                                <td>الراتب 2</td>
-                                <td><label for="">نشط</label></td>
-                                <td><button class="btn btn-outline-dark">المزيد</button></td>
-                            </tr>
-                            <tr>
-                                <td><img class="ms-2" src="images/arab.png" alt=""> الموظف 3</td>
-                                <td>13/06/2023</td>
-                                <td>عمله 3</td>
-                                <td>القسم 3</td>
-                                <td>الراتب 3</td>
-                                <td><label for="">نشط</label></td>
-                                <td><button class="btn btn-outline-dark">المزيد</button></td>
-                            </tr>
-                            <tr>
-                                <td><img class="ms-2" src="images/arab.png" alt=""> الموظف 4</td>
-                                <td>13/06/2023</td>
-                                <td>عمله 4</td>
-                                <td>القسم 4</td>
-                                <td>الراتب 4</td>
-                                <td><label for="">نشط</label></td>
-                                <td><button class="btn btn-outline-dark">المزيد</button></td>
-                            </tr>
-                            <tr>
-                                <td><img class="ms-2" src="images/arab.png" alt=""> الموظف 5</td>
-                                <td>13/06/2023</td>
-                                <td>عمله 5</td>
-                                <td>القسم 5</td>
-                                <td>الراتب 5</td>
-                                <td><label for="">نشط</label></td>
-                                <td><button class="btn btn-outline-dark">المزيد</button></td>
-                            </tr>
-                            <tr>
-                                <td><img class="ms-2" src="images/arab.png" alt=""> الموظف 6</td>
-                                <td>13/06/2023</td>
-                                <td>عمله 6</td>
-                                <td>القسم 6</td>
-                                <td>الراتب 6</td>
-                                <td><label for="">نشط</label></td>
-                                <td><button class="btn btn-outline-dark">المزيد</button></td>
-                            </tr>
+                        <tbody id="tbody">
                         </tbody>
                     </table>
                 </div>
@@ -197,7 +272,7 @@
     </div>
     <!-- external file js -->
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>

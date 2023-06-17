@@ -91,6 +91,28 @@ body {
 .content .employees {
   border-radius: 10px;
 }
+.content .employees .nationality, .content .employees .gender, .content .employees .marital-status {
+  position: relative;
+}
+.content .employees .nationality select, .content .employees .gender select, .content .employees .marital-status select {
+  background-color: white;
+  outline: none;
+  /* remove the original arrow */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+.content .employees .nationality .fa, .content .employees .gender .fa, .content .employees .marital-status .fa {
+  position: absolute;
+  top: 43px;
+  left: 15px;
+  color: #888;
+  pointer-events: none;
+}
+.content .employees .images i {
+  cursor: pointer;
+}
 .content .employees .responsive-table {
   overflow-x: auto;
 }
@@ -158,9 +180,6 @@ body {
 .sidebar .images > img {
   width: 60px;
   margin-bottom: 50px;
-}
-.sidebar .sidebar-nav {
-  height: 75%;
 }
 .sidebar ul > li {
   font-size: 14px;

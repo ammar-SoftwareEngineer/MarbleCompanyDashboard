@@ -52,7 +52,38 @@
   // start employees table
   .employees {
     border-radius: 10px;
+    .nationality ,.gender,.marital-status{
+      position: relative;
+      select {
+        background-color: white;
+        outline: none;
+        /* remove the original arrow */
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -o-appearance: none;
+        appearance: none;
+        
+      }
+      .fa {
+        position: absolute;
+        top: 43px;
+        left: 15px;
+        color: #888;
+        pointer-events: none;
+      }
+    }
+    .images{
+  
+      #image-preview{
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        position: relative;
+        z-index: 1;
+      }
     
+    }
+
     .responsive-table {
       overflow-x: auto;
       table {
@@ -61,10 +92,10 @@
         border-spacing: 0;
         thead td {
           font-weight: bold;
-          text-align: center;
+          
         }
         td {
-          padding: 15px ;
+          padding: 15px;
         }
         tbody {
           tr {
@@ -87,7 +118,6 @@
                 color: white;
                 border-radius: 6px;
               }
-            
             }
           }
         }
@@ -108,12 +138,12 @@
         }
       }
     }
-    .employees{
-      .head-tabe{
-        button{
+    .employees {
+      .head-tabe {
+        button {
           width: 60px !important;
           padding: 8px;
-          span{
+          span {
             display: none;
           }
         }
