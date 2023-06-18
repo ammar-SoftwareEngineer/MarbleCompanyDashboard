@@ -39,7 +39,7 @@ images.addEventListener('change', () => {
         image.style.display = "block";
         imagePreview.style.display = "none";
     } else {
-        imagePreview.style.display = "block";
+        imagePreview.style.cssText= "display:block; width:150px;";
         image.style.display = "none";
     }
 });

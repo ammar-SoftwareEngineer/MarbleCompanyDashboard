@@ -77,9 +77,6 @@
   color: #888;
   pointer-events: none;
 }
-.content .employees .images i {
-  cursor: pointer;
-}
 .content .employees .responsive-table {
   overflow-x: auto;
 }
@@ -90,7 +87,6 @@
 }
 .content .employees .responsive-table table thead td {
   font-weight: bold;
-  text-align: center;
 }
 .content .employees .responsive-table table td {
   padding: 15px;
@@ -107,6 +103,10 @@
   transition: 0.3s;
   border-bottom: 1px solid #eee;
   border-left: 1px solid #eee;
+}
+.content .employees .responsive-table table tbody tr td img {
+  width: 50px;
+  border-radius: 100%;
 }
 .content .employees .responsive-table table tbody tr td label {
   padding: 8px;

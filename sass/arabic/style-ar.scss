@@ -43,7 +43,6 @@ body {
     }
   }
 
-
   ul {
     > li {
       font-size: 14px;
@@ -153,8 +152,10 @@ body {
   // start employees table
   .employees {
     border-radius: 10px;
+ 
     .responsive-table {
       overflow-x: auto;
+
       table {
         font-size: 15px;
         min-width: 1000px;
@@ -167,7 +168,6 @@ body {
         }
         tbody {
           tr {
-            
             &:last-child {
               border-right: 1px solid #eee;
             }
@@ -180,7 +180,7 @@ body {
               transition: 0.3s;
               border-bottom: 1px solid #eee;
               border-left: 1px solid #eee;
-              
+
               label {
                 padding: 8px;
                 background-color: green;
@@ -189,12 +189,12 @@ body {
               }
               .shift {
                 background-color: #eee;
-                border-right:  6px solid #49a887;
+                border-right: 6px solid #49a887;
                 color: black;
               }
-              .close{
+              .close {
                 background-color: #eee;
-                border-right:  6px solid #d35630;
+                border-right: 6px solid #d35630;
               }
             }
           }
